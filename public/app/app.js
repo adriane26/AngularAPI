@@ -1,4 +1,4 @@
-var app = angular.module('AngularApp', ['ngRoute', 'AppCtrls']);
+var app = angular.module('AngularApp', ['ngRoute', 'AppCtrls', 'ngSanitize']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider
@@ -20,3 +20,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
   $locationProvider.html5Mode(true);
 }]);
+
+// app.controller('MainCtrl', ['$scope', function($scope){
+// 	$scope.test = 'hello';
+// }]);
