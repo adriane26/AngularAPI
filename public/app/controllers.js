@@ -21,3 +21,7 @@ appCtrls.controller('HikesCtrl', ['$scope', '$http', function($scope, $http){
 		console.log(res);
 	});
 }]);
+
+
+appCtrls.controller('CommentCtrl', ['$scope', '$http', function($scope, $http){
+}]);
